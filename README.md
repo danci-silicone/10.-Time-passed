@@ -1,7 +1,7 @@
 ### Deployment on GitHub pages
 
 Push an existing repository from the command line\
-`git remote add origin <repozitorij>`\
+`git remote add origin <repozitorij>`
 
 This package would help us to create a gh-pages branch on Github and also serve our bundled react files on the branch.
 
