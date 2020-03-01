@@ -36,3 +36,23 @@ Deploy to GitHub Pages:
 `yarn run deploy`
 
 Link: [How to deploy React App to GitHub Pages](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+
+### Slanje na druge repozitorije
+
+Samo se izbriše .git folder u repozitoriju (lokalno)
+Doda se u package.json: homepage - repozitorij u obliku: "https://danci-silicone.github.io/10.-Time-passed"
+
+Zatim:
+
+```git init```
+```git remote add origin <repozitorij>```
+```yarn run deploy```
+
+### Deployment na isti repozitorij
+
+Samo treba:
+
+```yarn run deploy```
+
+
+
