@@ -5,7 +5,7 @@ const PopupInner = styled.div`
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr auto 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto 1fr 1fr 1fr;
   left: 1%;
   right: 1%;
   top: 1%;
@@ -18,7 +18,7 @@ const PopupInner = styled.div`
 
 const Time = styled.div`
   grid-column: 3/4;
-  grid-row: 3/4;
+  grid-row: 4/5;
 
   display: block;
   padding: 5px 0px;
@@ -26,6 +26,25 @@ const Time = styled.div`
   text-align: center;
   font-size: 40px;
   color: gold;
+`;
+
+const Days = styled.div`
+  grid-row: 2/3;
+`;
+
+const Hours = styled.div`
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-size: 40px;
+  color: gold;
+`;
+
+const Minutes = styled.div`
+  grid-row: 5/6;
+`;
+
+const Seconds = styled.div`
+  grid-row: 7/8;
 `;
 
 class App extends React.Component {
@@ -46,7 +65,7 @@ class App extends React.Component {
           date.getMinutes(),
           date.getSeconds(),
           0
-        ) - new Date(2020, 2, 29, 21, 40, 0, 0)
+        ) - new Date(2020, 3, 1, 15, 31, 0, 0)
       ) / 1000;
 
     console.log("delta: " + delta + " " + Date.now());
@@ -120,9 +139,32 @@ class App extends React.Component {
           {/*<button onClick={this.startTimer} style={{ marginRight: "12px" }}>
           Let's Go
     </button>*/}
+          <Hours>
+            <div align="center">Od prestanka: </div>
+            <div align="center">01.03.2020.</div>
+            <div align="center">15:31</div>
+          </Hours>
           <Time>
-            Dana: {this.state.time.d} Sati: {this.state.time.h} Minuta:{" "}
-            {this.state.time.m} Sekundi: {this.state.time.s}
+            <Days>
+              <table align="center">
+                <tr>
+                  <th align="left">Dana:</th>
+                  <td>{this.state.time.d}</td>
+                </tr>
+                <tr>
+                  <th align="left">Sati:</th>
+                  <td>{this.state.time.h}</td>
+                </tr>
+                <tr>
+                  <th align="left">Minuta:</th>
+                  <td>{this.state.time.m}</td>
+                </tr>
+                <tr>
+                  <th align="left">Sekundi:</th>
+                  <td>{this.state.time.s}</td>
+                </tr>
+              </table>
+            </Days>
           </Time>
         </PopupInner>
       </div>
