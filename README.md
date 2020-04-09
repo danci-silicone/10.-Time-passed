@@ -31,6 +31,12 @@ In your package.json file, locate “scripts” add these lines of code:
 },
 </pre>
 
+### Važno!!
+* Ako neće proradi, onda:
+```gh-pages -d build```\
+umjesto\
+```gh-pages -b master -d build```
+
 Deploy to GitHub Pages:
 
 `yarn run deploy`
