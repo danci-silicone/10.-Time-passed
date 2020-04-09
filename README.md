@@ -14,7 +14,7 @@ Locate the package.json file in your root directory, add this line of code to yo
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dklarin.github.io/apartmani",
+  "homepage": "https://danci-silicone.github.io/10.-Time-passed/",
   "dependencies": {...
 </pre>
 
