@@ -5,7 +5,7 @@ Push an existing repository from the command line\
 
 ### Važno!!
 * Ako javlja problem s korisnikom, ili je drugi korisnik, onda:\
-`git remote add origin https://<usename>:<password>@<repozitorij>`\
+`git remote add origin https://<usename>:<password>@<repozitorij>`
 
 This package would help us to create a gh-pages branch on Github and also serve our bundled react files on the branch.
 
