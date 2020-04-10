@@ -2,7 +2,7 @@
   "name": "time-from",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danci-silicone.github.io/10.-Time-passed",
+  "homepage": "https://danci-silicone.github.io/Time-passed/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
